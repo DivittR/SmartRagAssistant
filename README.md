@@ -28,22 +28,3 @@ Built to eliminate the need to manually sift through dense, multi-page PDFs, thi
    ```bash
    git clone [https://github.com/DivittR/SmartRagAssistant.git](https://github.com/DivittR/SmartRagAssistant.git)
    cd SmartRagAssistant
-
-   Securely add your API Key
-Initialize the .NET user secrets manager to safely store your key locally:
-
-Bash
-dotnet user-secrets init
-dotnet user-secrets set "Google:ApiKey" "YOUR_GEMINI_API_KEY_HERE"
-Run the Application
-
-Bash
-dotnet run
-The application will start a local server. Open the provided localhost URL in your browser to access the web interface.
-
-💡 Usage Example
-Click Upload & Process to ingest a dense PDF (e.g., a 20-page SDE Placement Policy Manual).
-
-Type a specific query into the chat, such as: "What is the minimum CGPA requirement and how many active backlogs are allowed?"
-
-The AI will instantly return the exact rule, alongside the page numbers where the information was sourced.
